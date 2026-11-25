@@ -9,6 +9,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 from src.state import OrchestratorState
+from src.llm_provider import get_llm
 
 load_dotenv()
 
@@ -27,9 +28,7 @@ class RouteDecision(BaseModel):
     )
 
 
-llm = ChatOpenAI(model="openrouter/free",
-    api_key=os.getenv("OPENROUTER_API_KEY"),
-    base_url="https://openrouter.ai/api/v1")
+llm = get_llm(temperature=0)  # Deterministic output for routing decisions
 
 router_llm = llm.with_structured_output(RouteDecision)
 

@@ -1,0 +1,22 @@
+[theme]
+base = "dark"
+primaryColor = "#2F80FF"
+backgroundColor = "#04070D"
+secondaryBackgroundColor = "#0A1224"
+textColor = "#EAF2FF"
+linkColor = "#62D0FF"
+borderColor = "#16264A"
+codeBackgroundColor = "#070D1C"
+font = "sans serif"
+baseRadius = "1rem"
+headingFontSizes = ["1.9rem", "1.4rem", "1.1rem", "1rem", "0.95rem", "0.85rem"]
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+runOnSave = true
