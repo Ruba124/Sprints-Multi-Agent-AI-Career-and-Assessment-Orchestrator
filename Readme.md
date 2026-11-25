@@ -1,5 +1,7 @@
 # Sprints Multi-Agent AI Career & Assessment Orchestrator
 
+![Project image](image.png)
+
 A stateful, multi-agent AI orchestration platform built for **Sprints ("Masar")** using **LangGraph**, **LangChain**, **ChromaDB**, **SQLite3**, **Pydantic**, and **Streamlit**.
 
 The system unifies two core bootcamp workflows under a single intelligent supervisor:
@@ -67,6 +69,9 @@ Every feature in this repository maps directly to eight end-to-end engineering u
 * **Execution-Grounded Code Evaluation:** Code assessments are anchored to real Python `stdout`/traceback evidence rather than static LLM guessing.
 
 ---
+## Data & Curriculum Knowledge Base Note
+
+Note on data/sprints_curriculum.md: The official Sprints curriculum documentation was not provided in the project resources, so I authored a custom, structured curriculum knowledge base (`data/curricilum_docs/sprints_curriculum.md`) from scratch. It defines the bootcamp learning tracks, core module codes and prerequisites (`AI-101 through AI-104, BE-201, BE-202`), minimum assessment score thresholds (80%+), and Tier-1 hiring partner eligibility rules (`Fawry, InstaPay, Vodafone`) to ground the ChromaDB RAG pipeline and database cross-checks
 
 ## Project Structure
 
@@ -161,4 +166,4 @@ Executes automated verification across:
   > ```
   > *"*
 
-  ![alt text](image.png)
+ 
